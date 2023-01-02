@@ -26,23 +26,17 @@ public class Persons_controller {
 	return data.getId();                                     
 	}
 	
-	@GetMapping("/person1")  
+	@GetMapping("/person1")     
 	private List<Persons> findAll()   
 	{  
 	return ps.findAll();
 	}  
 
 	@GetMapping("/person/{id}")  
-	private Optional <Persons> optional(@PathVariable("id") int id)   
+	private Optional <Persons> optional(@PathVariable("id") int id)     
 	{  
 	return ps.findByid(id);  
 
 	}
-	
-	
-	
-	
-	
-	
 	
 }

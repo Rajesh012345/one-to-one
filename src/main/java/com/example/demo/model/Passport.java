@@ -18,7 +18,7 @@ public class Passport {
 	@Id
 	@Column(name="p_id")
 	private int p_id;
-	@Column(name="pass_no")
+	@Column(name="pass_no")                //                comited to git
 	private int pass_no;
 
 	
